@@ -8,12 +8,12 @@
             <table class="w-full">
                 <thead>
                     <tr class="border-b">
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Age</th>
-                        <th>Gender</th>
-                        <th>Actions</th>
+                        <th class="py-2">ID</th>
+                        <th class="py-2">Name</th>
+                        <th class="py-2">Course</th>
+                        <th class="py-2">Age</th>
+                        <th class="py-2">Gender</th>
+                        <th class="py-2">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
