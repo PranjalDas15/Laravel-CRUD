@@ -40,8 +40,8 @@
                 <label for="gender" class="block">Gender</label>
                 <select name="gender" value="{{old('gender')}}" id="gender" class="w-full py-2 px-3 border border-blue-200 bg-white rounded-lg">
                     <option disabled selected value="">Select gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option value="male" {{ old('gender') == 'male' ? 'selected' : '' }}>Male</option>
+                    <option value="female" {{ old('gender') == 'female' ? 'selected' : '' }}>Female</option>
                 </select>
                 @error('gender')
                     <p class="text-red-400 text-sm">{{ $message}}</p>

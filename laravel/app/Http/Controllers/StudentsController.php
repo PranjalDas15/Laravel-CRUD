@@ -35,7 +35,8 @@ class StudentsController extends Controller
         $rules = [
             'name' => 'required|min:3',
             'course' => 'required|min:3',
-            'age'=> 'required|max:3'
+            'age'=> 'required|min:1|max:70',
+            'gender'=>'required|in:male,female'
         ];
         $validator = Validator::make($request->all(), $rules);
         
